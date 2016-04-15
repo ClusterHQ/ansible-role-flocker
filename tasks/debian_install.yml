@@ -13,6 +13,10 @@
   apt: name=software-properties-common
   sudo: yes
 
+- name: install git
+  apt: name=git
+  sudo: yes
+
 - name: install flocker-repo
   command: add-apt-repository -y "deb https://clusterhq-archive.s3.amazonaws.com/ubuntu/{{ flocker_ubuntu_release_version.stdout }}/$(ARCH) /"
   sudo: yes

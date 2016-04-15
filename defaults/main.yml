@@ -6,6 +6,8 @@
 # you have named the inventory groups for these servers.
 flocker_control_service_groupname: flocker_control_service
 flocker_agents_groupname: flocker_agents
+flocker_docker_plugin_groupname: flocker_docker_plugin
+flocker_ceph_groupname: flocker_ceph
 
 # you must provide the absolute path to your flocker agent.yml file.
 flocker_agent_yml_path: ""
