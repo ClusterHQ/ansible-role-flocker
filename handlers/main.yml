@@ -10,3 +10,7 @@
 - name: restart flocker-container-agent
   service: name=flocker-container-agent state=restarted
   sudo: yes
+
+- name: restart flocker-docker-plugin
+  service: name=flocker-docker-plugin state=restarted
+  sudo: yes

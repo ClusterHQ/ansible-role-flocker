@@ -62,6 +62,12 @@
 - include: configure_agent.yml
   when: "'{{ flocker_agents_groupname }}' in group_names"
 
+- include: configure_plugin.yml
+  when: "'{{ flocker_docker_plugin_groupname }}' in group_names"
+
+- include: ceph_install.yml
+  when: "'{{ flocker_ceph_groupname }}' in group_names"
+
 - include: debian_firewall.yml
   when: "'{{ flocker_control_service_groupname }}' in group_names and ansible_os_family == 'Debian'"
 

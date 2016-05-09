@@ -19,6 +19,13 @@
     chdir: "{{ flocker_local_tempdir }}"
   delegate_to: 127.0.0.1
 
+- name: create plugin cert if its getting created
+  shell: "flocker-ca create-api-certificate plugin-cert-20b0e0b9-7a4e-4c88-9dd3-7aae1201ac72"
+  args:
+    chdir: "{{ flocker_local_tempdir }}"
+  delegate_to: 127.0.0.1
+  when: flocker_install_docker_plugin
+
 - name: create API cert
   shell: "flocker-ca create-api-certificate {{ flocker_api_cert_name }}"
   args:
