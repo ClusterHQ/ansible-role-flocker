@@ -1,6 +1,6 @@
 # Ansible Role: Flocker Installer
 
-[![Build Status](https://travis-ci.org/ClusterHQ/ansible-role-flocker.svg?branch=master)](https://travis-ci.org/justnoise/ansible-role-flocker.svg?branch=master)
+[![Build Status](https://travis-ci.org/ClusterHQ/ansible-role-flocker.svg?branch=master)](https://travis-ci.org/ClusterHQ/ansible-role-flocker.svg?branch=master)
 
 ## Requirements
 
