@@ -7,4 +7,4 @@
 [nodes:children]
 flocker_control_service
 flocker_agents
-
+flocker_docker_plugin
