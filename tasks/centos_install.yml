@@ -9,8 +9,8 @@
     state: present
   sudo: yes
 
-- name: install flocker repo
-  yum: name: git
+- name: install git
+  yum: name=git
   sudo: yes
 
 - name: install flocker-node
