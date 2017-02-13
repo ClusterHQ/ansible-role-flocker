@@ -39,6 +39,10 @@ A unique identifier for the API client.
 
 Set to True to install the Flocker Plugin for Docker.
 
+    flocker_docker_plugin_groupname: flocker_agents
+
+The groupname of the nodes that docker plugin will be installed - usually same as agent nodes.
+
 ## Example Playbook
 
     ---
